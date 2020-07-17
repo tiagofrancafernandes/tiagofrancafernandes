@@ -2,7 +2,7 @@
 ```php
 <?php
 
-echo "Hi there 👋. Welcome here."
+echo "Hi there 👋. Welcome here.";
 ```
 
 I am [*Tiago França*](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US). A Developer 🚀 from Brazil.
