@@ -12,7 +12,7 @@ I am [*Tiago França*](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_
 [![Telegram](https://img.shields.io/badge/-Telegram-blue?style=social&logo=Telegram)](https://telegram.me/tiagofrancafernandes)
 [![Website](https://img.shields.io/badge/WWW--black?style=social)](https://tiagofranca.com)
 
-
+---
 
 ### Welcome here.
 - :heart: I am christian, PHP Dev and Linux lover.
@@ -65,11 +65,33 @@ I'm excellent with Windows and Linux, but I definitely love Linux.
 
 ---
 
+<!--
+
+![Tiago's GitHub stats](https://github-readme-stats.vercel.app/api?username=tiagofrancafernandes&show_icons=true&theme=radical)
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tiagofrancafernandes&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+-->
+
+
+<a href="https://github.com/tiagofrancafernandes">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=tiagofrancafernandes&count_private=true&show_icons=true&include_all_commits=true&show_icons=true&theme=radical" />
+</a>
+<a href="https://github.com/tiagofrancafernandes">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiagofrancafernandes&layout=compact&show_icons=true&theme=radical" />
+</a>
+
+
+---
+
 #### README Credits:
 
 **SOME ICONS:** https://github.com/simple-icons/simple-icons
 
 **BADGES:** https://shields.io/
+
+**GitHub Readme Stats** https://github.com/anuraghazra/github-readme-stats
 
 **Inspirations:** 
 - https://github.com/kautukkundan/Awesome-Profile-README-templates
