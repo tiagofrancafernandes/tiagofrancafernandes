@@ -11,6 +11,8 @@ I am [*Tiago França*](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=social&logo=Linkedin)](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US)
 [![Telegram](https://img.shields.io/badge/-Telegram-blue?style=social&logo=Telegram)](https://telegram.me/tiagofrancafernandes)
 [![Website](https://img.shields.io/badge/WWW--black?style=social)](https://tiagofranca.com)
+[![Youtube](https://img.shields.io/badge/-Youtube-red?style=social&logo=Youtube)](https://www.youtube.com/channel/UCaIKqUtNnZme66qHdJAhCmQ)
+
 
 ---
 
