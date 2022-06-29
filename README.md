@@ -5,7 +5,9 @@
 echo "Hi there 👋. Welcome here.";
 ```
 
-I am [*Tiago França*](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US). A Developer 🚀 from Brazil.
+I am [*Tiago França*](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US). 
+
+I live in Brazil 🇧🇷.
 
 [![Github](https://img.shields.io/badge/-Github-black?style=social&logo=Github)](https://github.com/tiagofrancafernandes)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=social&logo=Linkedin)](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US)
