@@ -6,7 +6,7 @@ echo "Hi there 👋. Welcome here." . PHP_EOL;
 echo "I am... Loved by Jesus Christ. PHP/Laravel developer; Linux user; Open-source maker;" . PHP_EOL;
 ```
 
-I am [*Tiago França*](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US). 
+I am [*Tiago França*](https://www.linkedin.com/in/tiago-php/?locale=en_US). 
 
 I live in Brazil 🇧🇷.
 
