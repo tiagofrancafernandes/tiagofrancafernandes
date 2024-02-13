@@ -28,7 +28,7 @@ I live in Brazil 🇧🇷.
 - 👯 **I’m collaborate on:** [PHPPR - PHP Paraná](https://github.com/phppr/)
 - 🤔 **I’m looking for help with** Laravel, Postgres, ReactX
 - 💬 **Ask me about:** My son, Laravel, PHP, Linux and J. Christ
-- 📫 **How to reach me:** [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=social&logo=Linkedin)](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US) | [![Telegram](https://img.shields.io/badge/-Telegram-blue?style=social&logo=Telegram)](https://telegram.me/tiagofrancafernandes)
+- 📫 **How to reach me:** [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=social&logo=Linkedin)](https://www.linkedin.com/in/tiago-php/?locale=en_US) | [![Telegram](https://img.shields.io/badge/-Telegram-blue?style=social&logo=Telegram)](https://telegram.me/tiagofrancafernandes)
 <!--
 - ⚡ Fun fact: I love
 -->
