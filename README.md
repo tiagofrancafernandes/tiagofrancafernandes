@@ -68,10 +68,10 @@ I'm excellent with Windows and Linux, but I definitely love Linux.
 
 ---
 
-### My CVs
+### [My CVs](./_cvs/)
 
-- [🇧🇷 Portuguese CV](./Tiago%20Fran%C3%A7a%20-%20senior%20-%20Back-end%20PHP%20developer%20-%20pt-BR%20Resume.pdf)
-- [🇺🇸 English CV](./Tiago%20Fran%C3%A7a%20-%20senior%20-%20Back-end%20PHP%20developer%20-%20EN%20Resume.pdf)
+- [🇧🇷 Portuguese CV](./_cvs/Tiago%20Fran%C3%A7a%20-%20senior%20-%20Back-end%20PHP%20developer%20-%20pt-BR%20Resume.pdf)
+- [🇺🇸 English CV](./_cvs/Tiago%20Fran%C3%A7a%20-%20senior%20-%20Back-end%20PHP%20developer%20-%20EN%20Resume.pdf)
 ---
 
 <!--
