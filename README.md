@@ -9,6 +9,7 @@ echo "I am... Loved by Jesus Christ. PHP/Laravel developer; Linux user; Open-sou
 I am [*Tiago França*](https://www.linkedin.com/in/tiago-php/?locale=en_US). 
 
 I live in Brazil 🇧🇷.
+🇧🇷🤝🇮🇱 #StandWithIsrael
 
 [![Github](https://img.shields.io/badge/-Github-black?style=social&logo=Github)](https://github.com/tiagofrancafernandes)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=social&logo=Linkedin)](https://www.linkedin.com/in/tiago-fran%C3%A7a/?locale=en_US)
