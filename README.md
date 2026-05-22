@@ -13,6 +13,7 @@
 [![English](https://img.shields.io/badge/🇺🇸%20English-C1-2F80ED?style=flat-square)](https://cert.efset.org/en/oe9qvf)
 [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes&countColor=%234080ff&style=flat-square&labelStyle=lower)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes)
 
+<!-- ![PHP](https://api.iconify.design/skill-icons:php-dark.svg?height=2rem&width=2rem) -->
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
