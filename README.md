@@ -3,6 +3,7 @@
 **Senior Backend Engineer | Laravel & API Architect | Vue/Nuxt | AWS**
 
 [![GitHub](https://img.shields.io/badge/GitHub-tiagofrancafernandes-181717?style=flat-square&logo=github)](https://github.com/tiagofrancafernandes)
+[![GitHub](https://img.shields.io/github/followers/tiagofrancafernandes)](https://github.com/tiagofrancafernandes)
 [![X](https://img.shields.io/badge/twitter/X-@TiagoFOficial-FFF?style=flat-square&logo=x)](https://x.com/TiagoFOficial)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tiago--php-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/tiago-php)
 [![Telegram](https://img.shields.io/badge/Telegram-tiagofrancafernandes-26A5E4?style=flat-square&logo=telegram)](https://telegram.me/tiagofrancafernandes)
