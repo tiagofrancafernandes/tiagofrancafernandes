@@ -2,8 +2,70 @@
 
 **Senior Backend Engineer | Laravel & API Architect | Vue/Nuxt | AWS**
 
+<style>
+/* #Habilitar darkmode em uma página */
+html {
+    color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+/* Via estilo:  */
+
+/*
+<html class="theme-light"></html>
+
+<html class="theme-dark"></html>
+*/
+
+:root.theme-light {
+    color-scheme: light;
+    /* custom style for light */
+    --custom-style: #ffffff;
+}
+
+:root.theme-dark {
+    color-scheme: dark;
+    /* custom style for dark */
+    --custom-style: #000000;
+}
+
+p:has(a > img) {
+    display: flex !important;
+    gap: 0.2rem;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+
+p:has(> img) {
+    display: flex !important;
+    gap: 0.2rem;
+    max-width: 60%;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+}
+
+p:has(code > img) {
+    display: flex !important;
+    gap: 0.2rem;
+    max-width: 60%;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+}
+
+p > a:has(img) {
+    /* display: inline !important; */
+    /* float: left; */
+}
+</style>
+
 <!-- [![GitHub](https://img.shields.io/badge/GitHub-tiagofrancafernandes-181717?style=flat-square&logo=github)](https://github.com/tiagofrancafernandes) -->
 <!-- [![GitHub followers](https://img.shields.io/github/followers/tiagofrancafernandes?style=flat-square&logo=github&label=Followers)](https://github.com/tiagofrancafernandes) -->
+
 [![GitHub](https://img.shields.io/badge/GitHub-tiagofrancafernandes-181717?style=flat-square&logo=github)](https://github.com/tiagofrancafernandes)
 [![X](https://img.shields.io/badge/twitter/X-@TiagoFOficial-FFF?style=flat-square&logo=x)](https://x.com/TiagoFOficial)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tiago--php-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/tiago-php)
@@ -15,6 +77,7 @@
 [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes&countColor=%234080ff&style=flat-square&labelStyle=lower)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes)
 
 <!-- ![PHP](https://api.iconify.design/skill-icons:php-dark.svg?height=2rem&width=2rem) -->
+
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
@@ -79,7 +142,9 @@ I also work as a programming mentor, teaching PHP, Laravel, Linux, Docker and so
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/linux/linux.png" title="Linux"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/ubuntu/ubuntu.png" title="Ubuntu"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" title="Docker"></code>
+
 <!-- <code><img height="20" width="20" src="https://api.iconify.design/logos:aws.svg" title="AWS"></code> -->
+
 <code><img height="20" width="20" src="https://api.iconify.design/vscode-icons:file-type-aws.svg" title="AWS"></code>
 <code><img height="20" width="20" src="https://api.iconify.design/skill-icons:aws-light.svg" title="AWS"></code>
 <code><img height="20" src="https://api.iconify.design/logos:aws-lambda.svg" title="AWS Lambda"></code>
@@ -93,7 +158,9 @@ I also work as a programming mentor, teaching PHP, Laravel, Linux, Docker and so
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png" title="Vue.js"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nuxt/nuxt.png" title="Nuxt"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vite/vite.png" title="Vite"></code>
+
 <!-- <code><img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="Tailwind CSS"></code> -->
+
 <code><img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="Tailwind CSS"></code>
 <code><img height="20" src="https://api.iconify.design/skill-icons:alpinejs-light.svg" title="Alpine.js"></code>
 
@@ -272,7 +339,7 @@ These projects are useful experiments, templates or smaller applications. They a
 - AWS services such as EC2, RDS, S3 and Lambda.
 - Technical consulting for architecture, performance and maintainability.
 - Programming mentoring from beginner to advanced level.
-</details>
+  </details>
 
 ---
 
@@ -439,8 +506,7 @@ Estes projetos são experimentos, templates ou aplicações menores. Eles ficam 
 - Serviços AWS como EC2, RDS, S3 e Lambda.
 - Consultoria técnica em arquitetura, performance e manutenibilidade.
 - Mentoria em programação do básico ao avançado.
-</details>
-
+  </details>
 
 ## GitHub Stats
 

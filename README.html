@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" type="text/css">
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="hello-there-i-am-tiago-frança-fernandes-">Hello there! I am Tiago França Fernandes 👋</h1>
+<p><strong>Senior Backend Engineer | Laravel &amp; API Architect | Vue/Nuxt | AWS</strong></p>
+<style>
+/* #Habilitar darkmode em uma página */
+html {
+    color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+/* Via estilo:  */
+
+/*
+<html class="theme-light"></html>
+
+<html class="theme-dark"></html>
+*/
+
+:root.theme-light {
+    color-scheme: light;
+    /* custom style for light */
+    --custom-style: #ffffff;
+}
+
+:root.theme-dark {
+    color-scheme: dark;
+    /* custom style for dark */
+    --custom-style: #000000;
+}
+
+p:has(a > img) {
+    display: flex !important;
+    gap: 0.2rem;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+
+p:has(> img) {
+    display: flex !important;
+    gap: 0.2rem;
+    max-width: 60%;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+}
+
+p:has(code > img) {
+    display: flex !important;
+    gap: 0.2rem;
+    max-width: 60%;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+}
+
+p > a:has(img) {
+    /* display: inline !important; */
+    /* float: left; */
+}
+</style>
+<!-- [![GitHub](https://img.shields.io/badge/GitHub-tiagofrancafernandes-181717?style=flat-square&logo=github)](https://github.com/tiagofrancafernandes) -->
+<!-- [![GitHub followers](https://img.shields.io/github/followers/tiagofrancafernandes?style=flat-square&logo=github&label=Followers)](https://github.com/tiagofrancafernandes) -->
+<p><a href="https://github.com/tiagofrancafernandes"><img src="https://img.shields.io/badge/GitHub-tiagofrancafernandes-181717?style=flat-square&amp;logo=github" alt="GitHub"></a><br>
+<a href="https://x.com/TiagoFOficial"><img src="https://img.shields.io/badge/twitter/X-@TiagoFOficial-FFF?style=flat-square&amp;logo=x" alt="X"></a><br>
+<a href="https://www.linkedin.com/in/tiago-php"><img src="https://img.shields.io/badge/LinkedIn-tiago--php-0A66C2?style=flat-square&amp;logo=linkedin" alt="LinkedIn"></a><br>
+<a href="https://telegram.me/tiagofrancafernandes"><img src="https://img.shields.io/badge/Telegram-tiagofrancafernandes-26A5E4?style=flat-square&amp;logo=telegram" alt="Telegram"></a><br>
+<a href="https://tiagofranca.com"><img src="https://img.shields.io/badge/Website-tiagofranca.com-111111?style=flat-square&amp;logo=firefoxbrowser" alt="Website"></a><br>
+<a href="https://www.youtube.com/channel/UCaIKqUtNnZme66qHdJAhCmQ?sub_confirmation=1"><img src="https://img.shields.io/badge/YouTube-Channel-FF0000?style=flat-square&amp;logo=youtube" alt="YouTube"></a><br>
+<a href="https://www.superprof.com.br/aulas-programacao-php-laravel-basico-avancado-sem-restricao-idade.html"><img src="https://img.shields.io/badge/Superprof-Programming Mentor-00B67A?style=flat-square" alt="Superprof"></a><br>
+<a href="https://cert.efset.org/en/oe9qvf"><img src="https://img.shields.io/badge/🇺🇸 English-C1-2F80ED?style=flat-square" alt="English"></a><br>
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes"><img src="https://api.visitorbadge.io/api/combined?path=https://github.com/tiagofrancafernandes&amp;countColor=#4080ff&amp;style=flat-square&amp;labelStyle=lower" alt="Visitors"></a></p>
+<!-- ![PHP](https://api.iconify.design/skill-icons:php-dark.svg?height=2rem&width=2rem) -->
+<p><img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&amp;logo=php&amp;logoColor=white" alt="PHP"><br>
+<img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&amp;logo=laravel&amp;logoColor=white" alt="Laravel"><br>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL"><br>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker"><br>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&amp;logo=linux&amp;logoColor=111111" alt="Linux"><br>
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&amp;logo=amazonwebservices&amp;logoColor=white" alt="AWS"><br>
+<img src="https://img.shields.io/badge/Vue.js-42B883?style=flat-square&amp;logo=vuedotjs&amp;logoColor=white" alt="Vue.js"><br>
+<img src="https://img.shields.io/badge/Nuxt-00DC82?style=flat-square&amp;logo=nuxt&amp;logoColor=white" alt="Nuxt"><br>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript"><br>
+<img src="https://img.shields.io/badge/Tailwind CSS-38BDF8?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white" alt="Tailwind CSS"></p>
+<p><a href="skills.md">Skills</a> · <a href="_cvs/README.md">CVs / Résumés 🇧🇷/🇺🇸</a></p>
+<p>🇧🇷🤝🇮🇱 <strong>#StandWithIsrael</strong></p>
+<hr>
+<details open>
+<summary style="cursor: pointer;">🇺🇸 English</summary>
+<h2 id="about-me">About me</h2>
+<p>I am a <strong>Senior Backend Engineer</strong> from Brazil, focused on building scalable, maintainable and API-first systems with <strong>PHP, Laravel, PostgreSQL, Docker, Linux and AWS</strong>.</p>
+<p>My strongest background is in backend engineering, API architecture, database performance, third-party integrations and legacy system modernization. I also work comfortably with <strong>Vue.js, Nuxt and Tailwind CSS</strong>, especially when building frontend integrations for backend-driven products.</p>
+<p>I have worked with SaaS platforms, internal enterprise systems, automotive platforms, business tools, financial/business integrations and custom web applications. My work usually involves designing APIs, improving architecture, optimizing queries, refactoring legacy code, creating reliable development environments and helping teams make better technical decisions.</p>
+<p>I also work as a programming mentor, teaching PHP, Laravel, Linux, Docker and software engineering fundamentals.</p>
+<h2 id="what-i-do-best">What I do best</h2>
+<ul>
+<li>Design and maintain API-first backend systems.</li>
+<li>Build scalable Laravel applications.</li>
+<li>Modernize legacy PHP/Laravel codebases.</li>
+<li>Optimize PostgreSQL and SQL queries.</li>
+<li>Integrate external APIs and business services.</li>
+<li>Structure Docker-based development and deployment environments.</li>
+<li>Improve code organization, maintainability and technical consistency.</li>
+<li>Support teams with technical consulting and mentoring.</li>
+<li>Build Vue/Nuxt interfaces connected to backend systems.</li>
+</ul>
+<h2 id="main-stack">Main stack</h2>
+<p><strong>Backend &amp; APIs</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/php/php.png" title="PHP"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/laravel/laravel.png" title="Laravel"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" title="Node.js"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" title="TypeScript"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/json/json.png" title="JSON"></code></p>
+<p><strong>Databases &amp; Cache</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/postgresql/postgresql.png" title="PostgreSQL"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" title="MySQL"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/redis/redis.png" title="Redis"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" title="MongoDB"></code></p>
+<p><strong>DevOps, Cloud &amp; Tools</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/linux/linux.png" title="Linux"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/ubuntu/ubuntu.png" title="Ubuntu"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" title="Docker"></code></p>
+<!-- <code><img height="20" width="20" src="https://api.iconify.design/logos:aws.svg" title="AWS"></code> -->
+<p><code><img height="20" width="20" src="https://api.iconify.design/vscode-icons:file-type-aws.svg" title="AWS"></code><br>
+<code><img height="20" width="20" src="https://api.iconify.design/skill-icons:aws-light.svg" title="AWS"></code><br>
+<code><img height="20" src="https://api.iconify.design/logos:aws-lambda.svg" title="AWS Lambda"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" title="Git"></code><br>
+<code><img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/terminal/terminal.png" title="Terminal"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/bash/bash.png" title="Bash"></code></p>
+<p><strong>Frontend integration</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png" title="Vue.js"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nuxt/nuxt.png" title="Nuxt"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vite/vite.png" title="Vite"></code></p>
+<!-- <code><img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="Tailwind CSS"></code> -->
+<p><code><img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="Tailwind CSS"></code><br>
+<code><img height="20" src="https://api.iconify.design/skill-icons:alpinejs-light.svg" title="Alpine.js"></code></p>
+<h2 id="featured-projects">Featured Projects</h2>
+<h3 id="hour-ledger"><a href="https://hourledger.vercel.app">Hour Ledger</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:laravel-light.svg" title="Laravel">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+<p>Client hour management application with a Vue 3 frontend and a backend API.</p>
+<ul>
+<li>Frontend: <a href="https://github.com/tiagofrancafernandes/Client-Hour-Management-APPs-CC-frontend">Client-Hour-Management-APPs-CC-frontend</a></li>
+<li>API: <a href="https://github.com/tiagofrancafernandes/Client-Hour-Management-APPs-CC-backend">Client-Hour-Management-APPs-CC-backend</a></li>
+<li>Stack: Vue 3, Vite, Node.js, Vercel API</li>
+<li>Type: real application</li>
+</ul>
+<h3 id="github-projects-stats"><a href="https://github-projects-stats.vercel.app">GitHub Projects Stats</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
+<p>A Nuxt application for displaying GitHub project statistics.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/gh-projects-stats-nuxt">gh-projects-stats-nuxt</a></li>
+<li>Stack: Nuxt.js</li>
+<li>Type: real application</li>
+</ul>
+<h3 id="laravel-vue-admin-with-inertia"><a href="https://laravel-vue-admin-with-inertia.vercel.app">Laravel Vue Admin With Inertia</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:laravel-light.svg" title="Laravel">
+  <img height="20" style="background: white; border-radius: 3px;" src="https://api.iconify.design/devicon:inertiajs.svg" title="Inertia.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+<p>Admin foundation/prototype built with Laravel, Vue and Inertia.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/Laravel-Vue-Admin-With-Inertia">Laravel-Vue-Admin-With-Inertia</a></li>
+<li>Stack: Laravel, Vue, Inertia</li>
+<li>Type: admin foundation / prototype</li>
+</ul>
+<h3 id="superpos-vue"><a href="https://super-pos-vue.vercel.app">SuperPOS Vue</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:laravel-light.svg" title="Laravel">
+  <img height="20" style="background: white; border-radius: 3px;" src="https://api.iconify.design/devicon:inertiajs.svg" title="Inertia.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+<p>Point of sale application built with Vue 3 and Vite.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/SuperPOS-Vue">SuperPOS-Vue</a></li>
+<li>Stack: Vue 3, Vite</li>
+<li>Type: real application</li>
+</ul>
+<h3 id="personal-website-blog--forms"><a href="https://devtiagofranca.vercel.app">Personal Website, Blog &amp; Forms</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+<p>Personal website with portfolio, blog structure and forms.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancapontocom/Site-com-blog-portfolio-Forms">Site-com-blog-portfolio-Forms</a></li>
+<li>Stack: Nuxt.js</li>
+<li>Type: real application</li>
+</ul>
+<h3 id="customer-reviews-ai-summary"><a href="https://customer-reviews-ai-summary-nextjs-eosin-seven.vercel.app">Customer Reviews AI Summary</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+<p>Application that summarizes customer reviews using AI.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/customer-reviews-ai-summary-nextjs-vercel">customer-reviews-ai-summary-nextjs-vercel</a></li>
+<li>Stack: Next.js</li>
+<li>Type: real application / AI experiment</li>
+</ul>
+<h2 id="other-projects--experiments">Other Projects &amp; Experiments</h2>
+<h3 id="tailwindcss-v4-cheat-sheet"><a href="https://tailwindcss-cheat-sheet.vercel.app">TailwindCSS v4 Cheat Sheet</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="TailwindCSS">
+</span>
+<br>
+<p>A practical Tailwind CSS v4 reference app.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/TailwindCSS-v4-Cheat-Sheet">TailwindCSS-v4-Cheat-Sheet</a></li>
+</ul>
+<h3 id="recscreen"><a href="https://rec-screen.vercel.app">RecScreen</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
+<p>Screen capture application built with Vue 3.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/Screen-Capture-Vue3-App">Screen-Capture-Vue3-App</a></li>
+</ul>
+<h3 id="time-calculator"><a href="https://time-calculator-iota-mocha.vercel.app">Time Calculator</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
+<p>A simple time calculator built with Vue 3 and Vite.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/Time-Calculator">Time-Calculator</a></li>
+</ul>
+<h3 id="avatar-svg-generator"><a href="https://avatar-svg.vercel.app">Avatar SVG Generator</a></h3>
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
+<p>Nuxt application for generating SVG avatars.</p>
+<ul>
+<li>Repository: <a href="https://github.com/tiagofrancafernandes/Nuxt-Avatar-Generator">Nuxt-Avatar-Generator</a></li>
+</ul>
+<details>
+<summary style="cursor: pointer;">More experiments</summary>
+<p>These projects are useful experiments, templates or smaller applications. They are intentionally kept here to avoid making the main profile too crowded.</p>
+<ul>
+<li><a href="https://nuxt-shadcn-dashboard-gilt.vercel.app">Nuxt Shadcn Dashboard</a> - <a href="https://github.com/tiagofrancafernandes/nuxt-shadcn-dashboard">Repository</a></li>
+<li><a href="https://time-speaker.vercel.app">Time Speaker</a> - <a href="https://github.com/tiagofrancafernandes/TimeSpeaker">Repository</a></li>
+<li><a href="https://achadinhosvip.vercel.app">AchadinhosVIP</a> - <a href="https://github.com/tiagofrancafernandes/Achadinhos-e-Promos">Repository</a></li>
+<li><a href="https://mk-pay-landing-page.vercel.app">MK Pay Landing Page</a> - <a href="https://github.com/MK-Pay/Landing-Page">Repository</a></li>
+<li><a href="https://app-laravel-on-vercel.vercel.app">App Laravel on Vercel</a> - <a href="https://github.com/tiagofrancafernandes/App-Laravel-on-Vercel">Repository</a></li>
+<li><a href="https://app-php-on-vercel.vercel.app">App PHP on Vercel</a> - <a href="https://github.com/tiagofrancafernandes/App-PHP-on-Vercel">Repository</a></li>
+<li><a href="https://vercel-postgres-nuxt-seven.vercel.app">Vercel Postgres Nuxt</a> - <a href="https://github.com/tiagofrancafernandes/vercel-postgres-nuxt">Repository</a></li>
+</ul>
+</details>
+<h2 id="professional-highlights">Professional Highlights</h2>
+<ul>
+<li>Experience with SaaS platforms and business-critical backend systems.</li>
+<li>API architecture and third-party service integrations.</li>
+<li>Legacy Laravel modernization and technical debt reduction.</li>
+<li>PostgreSQL and SQL query optimization.</li>
+<li>Dockerized development and deployment workflows.</li>
+<li>AWS services such as EC2, RDS, S3 and Lambda.</li>
+<li>Technical consulting for architecture, performance and maintainability.</li>
+<li>Programming mentoring from beginner to advanced level.</details>
+</li>
+</ul>
+<hr>
+<details>
+<summary style="cursor: pointer;">🇧🇷 Português Brasil</summary>
+<h2 id="sobre-mim">Sobre mim</h2>
+<p>Sou <strong>Desenvolvedor Back-end Sênior</strong> do Brasil, com foco na construção de sistemas escaláveis, sustentáveis e orientados a APIs usando <strong>PHP, Laravel, PostgreSQL, Docker, Linux e AWS</strong>.</p>
+<p>Minha base mais forte está em engenharia back-end, arquitetura de APIs, performance de banco de dados, integrações com serviços externos e modernização de sistemas legados. Também trabalho bem com <strong>Vue.js, Nuxt e Tailwind CSS</strong>, principalmente na construção de interfaces integradas a sistemas back-end.</p>
+<p>Tenho experiência com plataformas SaaS, sistemas internos corporativos, plataformas automotivas, ferramentas de negócio, integrações financeiras/comerciais e aplicações web sob medida. No dia a dia, costumo atuar desenhando APIs, melhorando arquitetura, otimizando consultas, refatorando código legado, estruturando ambientes de desenvolvimento e apoiando equipes em decisões técnicas.</p>
+<p>Também atuo como mentor/professor de programação, ensinando PHP, Laravel, Linux, Docker e fundamentos de engenharia de software.</p>
+<h2 id="o-que-faço-melhor">O que faço melhor</h2>
+<ul>
+<li>Projeto e manutenção de sistemas back-end orientados a APIs.</li>
+<li>Desenvolvimento de aplicações escaláveis com Laravel.</li>
+<li>Modernização de sistemas legados em PHP/Laravel.</li>
+<li>Otimização de consultas PostgreSQL e SQL.</li>
+<li>Integração com APIs externas e serviços de negócio.</li>
+<li>Estruturação de ambientes com Docker.</li>
+<li>Melhoria de organização, manutenibilidade e consistência técnica.</li>
+<li>Consultoria técnica e mentoria para equipes e desenvolvedores.</li>
+<li>Construção de interfaces Vue/Nuxt conectadas a sistemas back-end.</li>
+</ul>
+<h2 id="stack-principal">Stack principal</h2>
+<p><strong>Back-end &amp; APIs</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/php/php.png" title="PHP"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/laravel/laravel.png" title="Laravel"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" title="Node.js"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" title="TypeScript"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/json/json.png" title="JSON"></code></p>
+<p><strong>Bancos de dados &amp; Cache</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/postgresql/postgresql.png" title="PostgreSQL"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" title="MySQL"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/redis/redis.png" title="Redis"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" title="MongoDB"></code></p>
+<p><strong>DevOps, Cloud &amp; Ferramentas</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/linux/linux.png" title="Linux"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/ubuntu/ubuntu.png" title="Ubuntu"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" title="Docker"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/amazonaws.svg" title="AWS"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" title="Git"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/github/github.png" title="GitHub"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/terminal/terminal.png" title="Terminal"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/bash/bash.png" title="Bash"></code></p>
+<p><strong>Integração front-end</strong></p>
+<p><code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png" title="Vue.js"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nuxt/nuxt.png" title="Nuxt"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vite/vite.png" title="Vite"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tailwindcss.svg" title="Tailwind CSS"></code><br>
+<code><img height="20" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/alpinedotjs.svg" title="Alpine.js"></code></p>
+<h2 id="projetos-em-destaque">Projetos em destaque</h2>
+<h3 id="hour-ledger-1"><a href="https://hourledger.vercel.app">Hour Ledger</a></h3>
+<p>Aplicação para gestão de horas de clientes, com front-end em Vue 3 e API back-end.</p>
+<ul>
+<li>Front-end: <a href="https://github.com/tiagofrancafernandes/Client-Hour-Management-APPs-CC-frontend">Client-Hour-Management-APPs-CC-frontend</a></li>
+<li>API: <a href="https://github.com/tiagofrancafernandes/Client-Hour-Management-APPs-CC-backend">Client-Hour-Management-APPs-CC-backend</a></li>
+<li>Stack: Vue 3, Vite, Node.js, Vercel API</li>
+<li>Tipo: aplicação real</li>
+</ul>
+<h3 id="github-projects-stats-1"><a href="https://github-projects-stats.vercel.app">GitHub Projects Stats</a></h3>
+<p>Aplicação Nuxt para exibir estatísticas de projetos do GitHub.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/gh-projects-stats-nuxt">gh-projects-stats-nuxt</a></li>
+<li>Stack: Nuxt.js</li>
+<li>Tipo: aplicação real</li>
+</ul>
+<h3 id="laravel-vue-admin-with-inertia-1"><a href="https://laravel-vue-admin-with-inertia.vercel.app">Laravel Vue Admin With Inertia</a></h3>
+<p>Base/protótipo de painel administrativo com Laravel, Vue e Inertia.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/Laravel-Vue-Admin-With-Inertia">Laravel-Vue-Admin-With-Inertia</a></li>
+<li>Stack: Laravel, Vue, Inertia</li>
+<li>Tipo: base administrativa / protótipo</li>
+</ul>
+<h3 id="superpos-vue-1"><a href="https://super-pos-vue.vercel.app">SuperPOS Vue</a></h3>
+<p>Sistema de PDV desenvolvido com Vue 3 e Vite.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/SuperPOS-Vue">SuperPOS-Vue</a></li>
+<li>Stack: Vue 3, Vite</li>
+<li>Tipo: aplicação real</li>
+</ul>
+<h3 id="site-pessoal-blog-e-formulários"><a href="https://devtiagofranca.vercel.app">Site pessoal, blog e formulários</a></h3>
+<p>Site pessoal com estrutura de portfólio, blog e formulários.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancapontocom/Site-com-blog-portfolio-Forms">Site-com-blog-portfolio-Forms</a></li>
+<li>Stack: Nuxt.js</li>
+<li>Tipo: aplicação real</li>
+</ul>
+<h3 id="customer-reviews-ai-summary-1"><a href="https://customer-reviews-ai-summary-nextjs-eosin-seven.vercel.app">Customer Reviews AI Summary</a></h3>
+<p>Aplicação para resumir avaliações de clientes usando IA.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/customer-reviews-ai-summary-nextjs-vercel">customer-reviews-ai-summary-nextjs-vercel</a></li>
+<li>Stack: Next.js</li>
+<li>Tipo: aplicação real / experimento com IA</li>
+</ul>
+<h2 id="outros-projetos-e-experimentos">Outros projetos e experimentos</h2>
+<h3 id="tailwindcss-v4-cheat-sheet-1"><a href="https://tailwindcss-cheat-sheet.vercel.app">TailwindCSS v4 Cheat Sheet</a></h3>
+<p>Aplicação de consulta prática para Tailwind CSS v4.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/TailwindCSS-v4-Cheat-Sheet">TailwindCSS-v4-Cheat-Sheet</a></li>
+</ul>
+<h3 id="recscreen-1"><a href="https://rec-screen.vercel.app">RecScreen</a></h3>
+<p>Aplicação de captura de tela desenvolvida com Vue 3.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/Screen-Capture-Vue3-App">Screen-Capture-Vue3-App</a></li>
+</ul>
+<h3 id="time-calculator-1"><a href="https://time-calculator-iota-mocha.vercel.app">Time Calculator</a></h3>
+<p>Calculadora de tempo desenvolvida com Vue 3 e Vite.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/Time-Calculator">Time-Calculator</a></li>
+</ul>
+<h3 id="avatar-svg-generator-1"><a href="https://avatar-svg.vercel.app">Avatar SVG Generator</a></h3>
+<p>Aplicação Nuxt para geração de avatares SVG.</p>
+<ul>
+<li>Repositório: <a href="https://github.com/tiagofrancafernandes/Nuxt-Avatar-Generator">Nuxt-Avatar-Generator</a></li>
+</ul>
+<details>
+<summary style="cursor: pointer;">Mais experimentos</summary>
+<p>Estes projetos são experimentos, templates ou aplicações menores. Eles ficam aqui para não deixar o perfil principal poluído.</p>
+<ul>
+<li><a href="https://nuxt-shadcn-dashboard-gilt.vercel.app">Nuxt Shadcn Dashboard</a> - <a href="https://github.com/tiagofrancafernandes/nuxt-shadcn-dashboard">Repositório</a></li>
+<li><a href="https://time-speaker.vercel.app">Time Speaker</a> - <a href="https://github.com/tiagofrancafernandes/TimeSpeaker">Repositório</a></li>
+<li><a href="https://achadinhosvip.vercel.app">AchadinhosVIP</a> - <a href="https://github.com/tiagofrancafernandes/Achadinhos-e-Promos">Repositório</a></li>
+<li><a href="https://mk-pay-landing-page.vercel.app">MK Pay Landing Page</a> - <a href="https://github.com/MK-Pay/Landing-Page">Repositório</a></li>
+<li><a href="https://app-laravel-on-vercel.vercel.app">App Laravel on Vercel</a> - <a href="https://github.com/tiagofrancafernandes/App-Laravel-on-Vercel">Repositório</a></li>
+<li><a href="https://app-php-on-vercel.vercel.app">App PHP on Vercel</a> - <a href="https://github.com/tiagofrancafernandes/App-PHP-on-Vercel">Repositório</a></li>
+<li><a href="https://vercel-postgres-nuxt-seven.vercel.app">Vercel Postgres Nuxt</a> - <a href="https://github.com/tiagofrancafernandes/vercel-postgres-nuxt">Repositório</a></li>
+</ul>
+</details>
+<h2 id="destaques-profissionais">Destaques profissionais</h2>
+<ul>
+<li>Experiência com plataformas SaaS e sistemas back-end críticos.</li>
+<li>Arquitetura de APIs e integrações com serviços externos.</li>
+<li>Modernização de sistemas legados em Laravel.</li>
+<li>Otimização de consultas PostgreSQL e SQL.</li>
+<li>Fluxos de desenvolvimento e deploy com Docker.</li>
+<li>Serviços AWS como EC2, RDS, S3 e Lambda.</li>
+<li>Consultoria técnica em arquitetura, performance e manutenibilidade.</li>
+<li>Mentoria em programação do básico ao avançado.</details>
+</li>
+</ul>
+<h2 id="github-stats">GitHub Stats</h2>
+<p>
+  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes" alt="Tiago França Fernandes GitHub Visitors stats">
+    <img height="20" src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes&countColor=%234080ff&style=flat-square&labelStyle=lower" alt="Tiago França Fernandes GitHub Visitors stats" />
+  </a>
+  <!-- <img height="165" src="https://github-readme-stats.vercel.app/api?username=tiagofrancafernandes&show_icons=true&theme=transparent&hide_border=true" alt="Tiago França Fernandes GitHub stats" /> -->
+  <!-- <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiagofrancafernandes&layout=compact&theme=transparent&hide_border=true" alt="Most used languages" /> -->
+</p>
+<p>
+  <img height="165" src="https://streak-stats.demolab.com?user=tiagofrancafernandes&theme=transparent&hide_border=true" alt="GitHub streak" />
+</p>
+<!--
+Optional GitHub cards. Enable later if you want a more visual profile.
+
+<p>
+  <img src="https://github-profile-trophy.vercel.app/?username=tiagofrancafernandes&theme=flat&no-frame=true&margin-w=10" alt="GitHub trophies" />
+</p>
+
+<p>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tiagofrancafernandes&theme=github-compact&hide_border=true" alt="GitHub activity graph" />
+</p>
+-->
+<h2 id="contact">Contact</h2>
+<ul>
+<li>GitHub: <a href="https://github.com/tiagofrancafernandes">github.com/tiagofrancafernandes</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/tiago-php">linkedin.com/in/tiago-php</a></li>
+<li>Telegram: <a href="https://telegram.me/tiagofrancafernandes">telegram.me/tiagofrancafernandes</a></li>
+<li>Website: <a href="https://tiagofranca.com">tiagofranca.com</a></li>
+<li>English certificate: <a href="https://cert.efset.org/en/oe9qvf">EF SET C1</a></li>
+</ul>
+
+</body>
+</html>
