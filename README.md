@@ -2,8 +2,9 @@
 
 **Senior Backend Engineer | Laravel & API Architect | Vue/Nuxt | AWS**
 
+<!-- [![GitHub](https://img.shields.io/badge/GitHub-tiagofrancafernandes-181717?style=flat-square&logo=github)](https://github.com/tiagofrancafernandes) -->
+<!-- [![GitHub followers](https://img.shields.io/github/followers/tiagofrancafernandes?style=flat-square&logo=github&label=Followers)](https://github.com/tiagofrancafernandes) -->
 [![GitHub](https://img.shields.io/badge/GitHub-tiagofrancafernandes-181717?style=flat-square&logo=github)](https://github.com/tiagofrancafernandes)
-[![GitHub](https://img.shields.io/github/followers/tiagofrancafernandes)](https://github.com/tiagofrancafernandes)
 [![X](https://img.shields.io/badge/twitter/X-@TiagoFOficial-FFF?style=flat-square&logo=x)](https://x.com/TiagoFOficial)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tiago--php-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/tiago-php)
 [![Telegram](https://img.shields.io/badge/Telegram-tiagofrancafernandes-26A5E4?style=flat-square&logo=telegram)](https://telegram.me/tiagofrancafernandes)
@@ -444,8 +445,8 @@ Estes projetos são experimentos, templates ou aplicações menores. Eles ficam 
 ## GitHub Stats
 
 <p>
-  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes" alt="Tiago França Fernandes GitHub Vistors stats">
-    <img height="20" src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes&countColor=%234080ff&style=flat-square&labelStyle=lower" alt="Tiago França Fernandes GitHub Vistors stats" />
+  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes" alt="Tiago França Fernandes GitHub Visitors stats">
+    <img height="20" src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Ftiagofrancafernandes&countColor=%234080ff&style=flat-square&labelStyle=lower" alt="Tiago França Fernandes GitHub Visitors stats" />
   </a>
   <!-- <img height="165" src="https://github-readme-stats.vercel.app/api?username=tiagofrancafernandes&show_icons=true&theme=transparent&hide_border=true" alt="Tiago França Fernandes GitHub stats" /> -->
   <!-- <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiagofrancafernandes&layout=compact&theme=transparent&hide_border=true" alt="Most used languages" /> -->
