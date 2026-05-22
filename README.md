@@ -44,8 +44,6 @@ I have worked with SaaS platforms, internal enterprise systems, automotive platf
 
 I also work as a programming mentor, teaching PHP, Laravel, Linux, Docker and software engineering fundamentals.
 
-I am a Christian, a Linux enthusiast and a Laravel lover.
-
 ## What I do best
 
 - Design and maintain API-first backend systems.
@@ -216,8 +214,6 @@ Minha base mais forte está em engenharia back-end, arquitetura de APIs, perform
 Tenho experiência com plataformas SaaS, sistemas internos corporativos, plataformas automotivas, ferramentas de negócio, integrações financeiras/comerciais e aplicações web sob medida. No dia a dia, costumo atuar desenhando APIs, melhorando arquitetura, otimizando consultas, refatorando código legado, estruturando ambientes de desenvolvimento e apoiando equipes em decisões técnicas.
 
 Também atuo como mentor/professor de programação, ensinando PHP, Laravel, Linux, Docker e fundamentos de engenharia de software.
-
-Sou cristão, entusiasta de Linux e gosto muito de Laravel.
 
 ## O que faço melhor
 
