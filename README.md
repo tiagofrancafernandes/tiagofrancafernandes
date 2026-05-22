@@ -80,10 +80,10 @@ I also work as a programming mentor, teaching PHP, Laravel, Linux, Docker and so
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" title="Docker"></code>
 <!-- <code><img height="20" width="20" src="https://api.iconify.design/logos:aws.svg" title="AWS"></code> -->
 <code><img height="20" width="20" src="https://api.iconify.design/vscode-icons:file-type-aws.svg" title="AWS"></code>
-<code><img height="20" width="20" src="https://api.iconify.design/skill-icons:aws-dark.svg" title="AWS"></code>
+<code><img height="20" width="20" src="https://api.iconify.design/skill-icons:aws-light.svg" title="AWS"></code>
 <code><img height="20" src="https://api.iconify.design/logos:aws-lambda.svg" title="AWS Lambda"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" title="Git"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/github/github.png" title="GitHub"></code>
+<code><img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/terminal/terminal.png" title="Terminal"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/bash/bash.png" title="Bash"></code>
 
@@ -93,7 +93,7 @@ I also work as a programming mentor, teaching PHP, Laravel, Linux, Docker and so
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nuxt/nuxt.png" title="Nuxt"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/vite/vite.png" title="Vite"></code>
 <!-- <code><img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="Tailwind CSS"></code> -->
-<code><img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-dark.svg" title="Tailwind CSS"></code>
+<code><img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="Tailwind CSS"></code>
 <code><img height="20" src="https://api.iconify.design/skill-icons:alpinejs-light.svg" title="Alpine.js"></code>
 
 ## Featured Projects
