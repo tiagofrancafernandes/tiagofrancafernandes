@@ -100,6 +100,15 @@ I also work as a programming mentor, teaching PHP, Laravel, Linux, Docker and so
 
 ### [Hour Ledger](https://hourledger.vercel.app)
 
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:laravel-light.svg" title="Laravel">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+
 Client hour management application with a Vue 3 frontend and a backend API.
 
 - Frontend: [Client-Hour-Management-APPs-CC-frontend](https://github.com/tiagofrancafernandes/Client-Hour-Management-APPs-CC-frontend)
@@ -109,6 +118,13 @@ Client hour management application with a Vue 3 frontend and a backend API.
 
 ### [GitHub Projects Stats](https://github-projects-stats.vercel.app)
 
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
+
 A Nuxt application for displaying GitHub project statistics.
 
 - Repository: [gh-projects-stats-nuxt](https://github.com/tiagofrancafernandes/gh-projects-stats-nuxt)
@@ -116,6 +132,15 @@ A Nuxt application for displaying GitHub project statistics.
 - Type: real application
 
 ### [Laravel Vue Admin With Inertia](https://laravel-vue-admin-with-inertia.vercel.app)
+
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:laravel-light.svg" title="Laravel">
+  <img height="20" style="background: white; border-radius: 3px;" src="https://api.iconify.design/devicon:inertiajs.svg" title="Inertia.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
 
 Admin foundation/prototype built with Laravel, Vue and Inertia.
 
@@ -125,6 +150,15 @@ Admin foundation/prototype built with Laravel, Vue and Inertia.
 
 ### [SuperPOS Vue](https://super-pos-vue.vercel.app)
 
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:laravel-light.svg" title="Laravel">
+  <img height="20" style="background: white; border-radius: 3px;" src="https://api.iconify.design/devicon:inertiajs.svg" title="Inertia.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+
 Point of sale application built with Vue 3 and Vite.
 
 - Repository: [SuperPOS-Vue](https://github.com/tiagofrancafernandes/SuperPOS-Vue)
@@ -133,6 +167,14 @@ Point of sale application built with Vue 3 and Vite.
 
 ### [Personal Website, Blog & Forms](https://devtiagofranca.vercel.app)
 
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
+
 Personal website with portfolio, blog structure and forms.
 
 - Repository: [Site-com-blog-portfolio-Forms](https://github.com/tiagofrancapontocom/Site-com-blog-portfolio-Forms)
@@ -140,6 +182,13 @@ Personal website with portfolio, blog structure and forms.
 - Type: real application
 
 ### [Customer Reviews AI Summary](https://customer-reviews-ai-summary-nextjs-eosin-seven.vercel.app)
+
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:postgresql-light.svg" title="PostgreSQL">
+</span>
+<br>
 
 Application that summarizes customer reviews using AI.
 
@@ -151,11 +200,23 @@ Application that summarizes customer reviews using AI.
 
 ### [TailwindCSS v4 Cheat Sheet](https://tailwindcss-cheat-sheet.vercel.app)
 
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:tailwindcss-light.svg" title="TailwindCSS">
+</span>
+<br>
+
 A practical Tailwind CSS v4 reference app.
 
 - Repository: [TailwindCSS-v4-Cheat-Sheet](https://github.com/tiagofrancafernandes/TailwindCSS-v4-Cheat-Sheet)
 
 ### [RecScreen](https://rec-screen.vercel.app)
+
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
 
 Screen capture application built with Vue 3.
 
@@ -163,11 +224,23 @@ Screen capture application built with Vue 3.
 
 ### [Time Calculator](https://time-calculator-iota-mocha.vercel.app)
 
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
+
 A simple time calculator built with Vue 3 and Vite.
 
 - Repository: [Time-Calculator](https://github.com/tiagofrancafernandes/Time-Calculator)
 
 ### [Avatar SVG Generator](https://avatar-svg.vercel.app)
+
+<span>
+  <img height="20" src="https://api.iconify.design/skill-icons:github-light.svg" title="GitHub">
+  <img height="20" src="https://api.iconify.design/skill-icons:nuxtjs-light.svg" title="Nuxt.js">
+  <img height="20" src="https://api.iconify.design/skill-icons:vuejs-light.svg" title="Vue.js">
+</span>
+<br>
 
 Nuxt application for generating SVG avatars.
 
